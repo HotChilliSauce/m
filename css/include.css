@@ -111,6 +111,8 @@
     margin: 0 auto;
     border: 1px solid #fff;
     text-align: center;
+    vertical-align: middle;
+    margin-top: 20px;
 }
 
 
