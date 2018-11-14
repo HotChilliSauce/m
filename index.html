@@ -12,6 +12,7 @@
 <link rel="shortcut icon" href="" type="image/x-icon"/>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
         
@@ -25,6 +26,15 @@
         prevArrow:'<i class="fas fa-arrow-circle-left prevBtn"></i>',
         nextArrow:'<i class=" fas fa-arrow-circle-right nextBtn"></i>'
         });
+        
+        /*
+        //헤더와 푸터불러오기
+        $("#header").load("include/header.html");
+        $("#footer").load("include/footer.html");
+        */
+        //id 지정을 통해서도 가능합니다.
+        //$("#header").load("header.html #navBar")
+        
     })    
 </script>  
 </head>
@@ -36,7 +46,7 @@
 <header id="header">
     <div class="headerTop">
         <!--로고시작-->
-        <h1><a href="index.html">로고영역</a></h1>
+        <h1><a href="../index.html">로고영역</a></h1>
         <!--로고끝-->
         <!--패널시작-->
         <div class="pannel">
@@ -54,7 +64,6 @@
         <div class="mainSliderBox slider">
             <div class="mainSlider">
                 <img src="imges/main/main02.jpg" alt="메인이미지"/>
-
             </div>
             <div class="mainSlider">
                 <img src="imges/main/main01.png" alt="메인이미지"/>
@@ -264,7 +273,7 @@
     
 <!--푸터시작-->
 <footer id="footer">
-    <div class="footerBg">
+        <div class="footerBg">
         <div class="footerInner">
         <!--푸터배너-->
         <ul class="footerBnr cf">
@@ -373,6 +382,10 @@
         <li><a href="#">가상페인팅 서비스</a></li>
         <li><a href="#">대리점 안내</a></li>
         <li><a href="#">Q&amp;A</a></li>
+        <h3>미디어</h3>
+        <li><a href="#">NOROO 뉴스</a></li>
+        <li><a href="#">NOROO 사보</a></li>
+        <li><a href="#">홍보 자료실</a></li>
         <li class="pannelLag"><a href="#">Lang</a></li>
     </ul>
 </div>
